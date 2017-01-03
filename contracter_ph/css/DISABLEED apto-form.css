@@ -1,0 +1,219 @@
+/************** APTO Form Styling ****************/
+
+@charset "UTF-8"
+
+* {
+  border: none;
+}
+
+.box {
+  margin: 10px auto 10px auto;
+  padding: 25px;
+  text-align: center;
+}
+
+.button {
+    /*font-family: sans-serif;*/
+    background-color: none;
+    font-size: 16px;
+    border: 2px solid #75caca;
+    color: #75caca;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: uppercase;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+    display: block;
+    font-weight: bold;
+    width: 250px;
+}
+
+.button:hover {
+  background: #75caca;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 45px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 3s ease-in-out;
+}
+
+.popup h1 {
+  font-size: 1.5em;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+
+}
+.popup .close:hover {
+  color: #d2db3a;
+}
+
+@media screen and (max-height: 700px max-width: 700px){
+  .box  {
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+  .popup .popupContent {
+    overflow: scroll;
+    max-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .box  {
+    width: 100%;
+  }
+  .popup{
+    width: 100%;
+  }
+  .popup .popupContent {
+    overflow: scroll;
+    max-height: 100vh;
+  }
+
+
+*:focus {outline: none;}
+  form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+form h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: normal;
+  font-size: 75%;
+}
+
+
+form input[type=text], input[type=email], input[type=phone]  {
+  line-height: normal;
+  display: inline-block;
+  width: 97%;
+  padding: 6px 10px;
+  margin: 1px 0px 15px 0px;
+  box-sizing: border-box;
+  border: 2px solid #Deece7;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 75%;
+}
+
+form textarea {
+  display: inline-block;
+  width: 97%;
+  height: 100px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 2px solid #Deece7;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-size: 75%;
+}
+
+form label {
+  font-family: sans-serif;
+  color: #576571;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+form input:focus:valid, textarea:focus:valid {
+    background: #fff url(images/tick_good.svg) no-repeat 98% center;
+    background-size: 10px;
+    box-shadow: 0 0 1px #d2db3a;
+    border-color: #d2db3a;
+}
+
+form input:valid, textarea:valid {
+    background: #fff url(images/tick_good.svg) no-repeat 98% center;
+    background-size: 10px;
+    box-shadow: 0 0 1px #d2db3a;
+    border-color: #d2db3a;
+}
+
+.popup button {
+    font-family: sans-serif;
+    background-color: white;
+    font-size: 16px;
+    width: 97%;
+    border: 2px solid #75caca;
+    color: #75caca;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 15px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: uppercase;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+}
+
+button:hover{
+    background-color: #75caca;
+    border: 2px solid #75caca; 
+    color: white;
+    
+}
+
+#first_name {
+    width: 48%;
+    display: inline-block;
+}
+
+#last_name {
+    width: 48%;
+    display: inline-block;
+}
+
+#email {
+    width: 48%;
+    display: inline-block;
+}
+
+#phone {
+    width: 48%;
+    display: inline-block;
+  }
+
+
+    /******************** END APTO FORM STYLING *********************/
